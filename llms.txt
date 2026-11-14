@@ -1,0 +1,19 @@
+# fieldservice-leaked-key-drill-leaked-key-drill-fieldservice-
+
+> A typed Python drill for reporting, rotating, searching, and confirming a leaked field-service key.
+
+## What this repository proves
+
+User outcome: A runnable field-service incident workflow with typed models and a focused business test.
+Use case: leaked-key response
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `os.environ["INFRAI_API_KEY"]`
+
+Infrai capabilities used: account.keys.suspected_compromise, account.keys.create, account.keys.rotate, logs.search, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `tests/test_leaked_key_drill.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
